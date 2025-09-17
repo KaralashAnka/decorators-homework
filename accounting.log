@@ -1,0 +1,7 @@
+2025-09-14 19:13:07 | SUCCESS | get_employees() -> [{'id': 1, 'name': 'Иванов И.И.', 'position': 'Менеджер', 'salary': 120000.0}, {'id': 2, 'name': 'Петров П.П.', 'position': 'Программист', 'salary': 180000.0}, {'id': 3, 'name': 'Сидоров С.С.', 'position': 'Аналитик', 'salary': 150000.0}] | Время: 0.0504с
+2025-09-14 19:13:07 | SUCCESS | get_employee_by_id(1) -> {'id': 1, 'name': 'Иванов И.И.', 'position': 'Менеджер', 'salary': 120000.0} | Время: 0.0517с
+2025-09-14 19:13:08 | SUCCESS | add_employee(Кузнецов К.К., Дизайнер) -> {'id': 4, 'name': 'Кузнецов К.К.', 'position': 'Дизайнер', 'salary': 100000.0, 'hire_date': '2025-09-14'} | Время: 0.0001с
+2025-09-14 19:13:08 | SUCCESS | calculate_individual_salary(Иванов И.И., 120000.0, 15.0) -> {'employee': 'Иванов И.И.', 'base': 120000.0, 'bonus': 18000.0, 'total': 138000.0} | Время: 0.0001с
+2025-09-14 19:13:08 | SUCCESS | calculate_taxes(150000.0) -> {'gross_salary': 150000.0, 'income_tax': 19500.0, 'social_tax': 33000.0, 'net_salary': 130500.0, 'total_taxes': 52500.0} | Время: 0.0000с
+2025-09-14 19:13:08 | ERROR | calculate_individual_salary((123, 'invalid', 10.0), {}) -> TypeError: Аргумент 1 функции calculate_individual_salary должен быть типа str, получен int | Время: 0.0000с
+2025-09-14 19:13:08 | ERROR | calculate_taxes((-1000,), {}) -> ValueError: Зарплата должна быть положительным числом | Время: 0.0000с
